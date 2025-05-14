@@ -1,0 +1,268 @@
+.encavezado {
+  width: 100%;
+  height: auto;
+}
+
+.h2Encavezado {
+  color: #79addc;
+  padding: 30px;
+  padding-bottom: 0px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.h1TheBlog {
+
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  color: #ffc09f;
+}
+
+.divImagen {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.img-uno {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlayTexto {
+  position: absolute;
+  top: 40%;
+  left: 63%;
+  transform: translate(-50%, -50%);
+  /* Centra el texto */
+  color: gray;
+  text-align: center;
+  padding: 0px;
+}
+
+.tituloImg {
+  font-size: 100px;
+  margin-bottom: 5px;
+  color: #346691;
+}
+
+.tituloDosImg {
+  font-size: 80px;
+  color: #79addc;
+  margin: 0px;
+
+}
+
+.parrafoImg {
+  font-size: 25px;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #315a7e;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+
+
+.h2Fashio {
+  font-size: 60px;
+  color: #346691;
+  display: flex;
+  justify-content: center;
+}
+
+.flexContenedorDiv {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.divUno {
+
+  height: auto;
+  padding: 20px;
+}
+
+i .divDos {
+
+  height: auto;
+  padding: 20px;
+
+}
+
+.divTres {
+
+  height: auto;
+  padding: 20px;
+}
+
+.imgDivUno {
+  width: 450px;
+  height: 600px;
+}
+
+.imgDivDos {
+  width: 450px;
+  height: 600px;
+}
+
+.imagenDivTres {
+  width: 450px;
+  height: 600px;
+}
+
+.tituloH3 {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  color: #346691;
+}
+
+.parrafoDiv {
+  font-size: 20px;
+  color: gray;
+}
+
+.btnUno {
+
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #315a7e;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  margin-left: 150px;
+}
+
+.tituloDosH3 {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  color: #346691;
+}
+
+.parrafoDivDos {
+  font-size: 20px;
+  color: gray;
+}
+
+.btnDos {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #315a7e;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  margin-left: 150px;
+}
+
+.tituloTresH3 {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  color: #346691;
+}
+
+.parrafoDivTres {
+  font-size: 20px;
+  color: gray;
+}
+
+.btnTres {
+  font-size: 20px;
+  padding: 10px 20px;
+  background-color: #315a7e;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+  margin-left: 150px;
+}
+
+.color1 {
+  color: #346691
+}
+
+
+
+.contenedorImg {
+  position: relative;
+  background-color: #fff2ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 100%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.imgDiv {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ultimaImg {
+  width: 70%;
+  height: 100%;
+  object-fit: cover;
+  margin-left: 35%;
+}
+
+.divTextoImg {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #f89c92;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  height: 300px;
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.h2Thebest {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+  color: white;
+  justify-content: center;
+  display: flex;
+}
+
+.h2Collection {
+  font-size: 55px;
+  font-style: italic;
+  margin: 0 0 15px 0;
+  color: white;
+  justify-content: center;
+  display: flex;
+}
+
+.pUltimaImg {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.btnUltimaImg {
+  background-color: #315a7e;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-left: 37%;
+}

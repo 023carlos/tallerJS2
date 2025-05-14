@@ -1,0 +1,177 @@
+.encavezado {
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start;  /* Lo mantiene arriba */
+    padding-top: 10px;
+    background-color: #fff;
+}
+
+.logo-btn {
+    font-size: 20px;
+    padding: auto;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+.divPrimeraImagen {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.primaraImagen {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 0;
+}
+
+.tituloStyle {
+    position: absolute;
+    top: 40%;       /* mitad vertical */
+    left: 50%;     /* mitad horizontal */
+    transform: translate(-50%, -50%);    /* lo centra exactamente */
+    color: white;
+    font-size: 200px;    /* letra grande */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);     /* contraste sobre imagen */
+    white-space: nowrap;   /* evita que el texto se divida en dos líneas */
+}
+
+.tercer-Div {
+
+    width: 100%;
+    background-color: rgb(226, 226, 228);
+    margin: 0px;
+    padding: 0%;
+}
+
+.h2Precio {
+    padding: 30px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.textoPrimerP {
+
+    font-size: 20px;
+    color: grey;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.btn-shop {
+
+    font-size: 20px;
+    padding: auto;
+    padding: 10px;
+    background-color: yellow;
+    margin-left: 45%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flexContenedor {
+    display: flex;
+    width: 100%;
+    height: 550px;
+}
+
+.divImg-Dos {
+    width: 60%;
+}
+
+.divTexto {
+    background-color: orange;
+    width: 40%;
+}
+
+.segundaImagen {
+    width: 100%;
+    height: 550px;
+}
+
+
+.h2NewStyle {
+    padding: 30px;
+    padding-top: 100px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.textoSegundoP {
+
+    font-size: 20px;
+    color: rgb(60, 60, 60);
+    margin: 0 auto;
+    max-width: 550px;
+    padding-left: 50PX;
+}
+
+.btn-BuyNow {
+
+    font-size: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding: 20px;
+    background-color: rgb(60, 60, 60);
+    margin-left: 40%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: aliceblue;
+
+}
+
+.contenedorConIconos{
+    display: flex;
+    justify-content: center;
+}
+
+.tercerTitulo{
+
+    padding: 30px;
+    padding-top: 100px;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    color: black;
+}
+
+.facebook{
+    width: 80px;
+    height: auto;
+}
+
+.instagram{
+
+     width: 80px;
+    height: auto;
+}
+
+.twitter{
+
+    width: 80px;
+    height: auto;
+
+}
+
+.parrafoFinal{
+
+     font-size: 20px;
+    color: rgb(60, 60, 60);
+    margin: 0 auto;
+    max-width: 950px;
+    padding: 50px;
+}

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="description" content="Página principal de Mi Sitio de Fitness">
+  <meta name="keywords" content="fitness, gimnasio, salud, entrenamiento">
+  <meta name="author" content="CARLOS MARIO ULLOQUE ALVAREZ">
+    <title>Ejercicio #3</title>
+    <link rel="stylesheet" href="../css/estilos3.css">
+    <script src="../js/utulidades.js"></script>
+</head>
+<body>
+
+
+    <script>
+
+
+let header = crearElemento('div')
+header.classList.add('encavezado')
+
+let logo = crearElementoConTexto('h1', 'YOUR LOGO')
+logo.classList.add('logo')
+
+let navBar = crearElemento('div')
+navBar.classList.add('navBar')
+
+// Crear y agregar enlaces
+let enlaces = ['News', 'About us', 'Trends', 'Training']
+enlaces.forEach(texto => {
+  let link = crearElemento('a')
+  link.href = '#'
+  link.textContent = texto
+  link.classList.add('navLink')
+  adicionarElementoAContenedor(link, navBar)
+})
+
+adicionarElementoAContenedor(logo, header)
+adicionarElementoAContenedor(navBar, header)
+
+adicionarElementoABody(header)
+
+
+
+
+
+let contenedorFoto = crearElemento('div')
+contenedorFoto.classList.add('contenedorFoto')
+
+let divFoto = crearElemento('div')
+divFoto.classList.add('divParaLaFoto')
+
+let foto = crearImagen('../recursos/gym.jpg')
+foto.classList.add('imgFoto')
+
+let divElementosFoto = crearElemento('div')
+divElementosFoto.classList.add('contenedorElementos')
+
+let divDiv = crearElemento('div')
+divDiv.classList.add('divH2P')
+
+let h2Foto = crearElementoConTexto('h2','WORKOUT')
+h2Foto.classList.add('h2Foto')
+
+let pFoto = crearElementoConTexto('p','Lorem ipsum dolor sit amet consectetur adipisicing elit...')
+pFoto.classList.add('pFoto')
+
+let botonFoto = crearElementoConTexto('button','Obten Descuento')
+botonFoto.classList.add('btnFoto')
+
+
+adicionarElementoAContenedor(foto, divFoto)
+adicionarElementoAContenedor(divElementosFoto, divFoto)
+adicionarElementoAContenedor(divFoto, contenedorFoto) 
+
+
+adicionarElementoAContenedor(h2Foto, divDiv)
+adicionarElementoAContenedor(pFoto, divDiv)
+adicionarElementoAContenedor(divDiv, divElementosFoto)
+
+adicionarElementoAContenedor(botonFoto, divElementosFoto)
+
+adicionarElementoABody(contenedorFoto)
+
+
+
+
+let divDescuentoContenedor = crearElemento('div')
+divDescuentoContenedor.classList.add('divDescuentoContenedor')
+
+let divDescuento = crearElemento('div')
+divDescuento.classList.add('divDescuento')
+
+let tituloDescuento = crearElementoConTexto('h2','Subscribe our Newsletter')
+tituloDescuento.classList.add('h2Descuento')
+
+let imgDescuento = crearImagen('../recursos/descuento.jpg')
+imgDescuento.classList.add('imgDescuento')
+
+let pDescuento = crearElementoConTexto('p','Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni consectetur iure, quidem libero sequi ipsa expedita perspiciatis tempore deserunt impedit necessitatibus labore culpa quae voluptatibus recusandae fugiat corrupti ipsa')
+pDescuento.classList.add('pDescuento')
+
+let botonDescuento = crearElementoConTexto('button','CRAY NOW')
+botonDescuento.classList.add('btnDescuento')
+
+adicionarElementoAContenedor(tituloDescuento,divDescuento)
+adicionarElementoAContenedor(imgDescuento,divDescuento)
+
+adicionarElementoAContenedor(divDescuento,divDescuentoContenedor)
+adicionarElementoAContenedor(pDescuento,divDescuentoContenedor)
+adicionarElementoAContenedor(botonDescuento,divDescuentoContenedor)
+
+adicionarElementoABody(divDescuentoContenedor)
+
+
+
+
+let divUno = crearElemento('div')
+divUno.classList.add('primerContenedor')
+
+let imgDivUno = crearImagen('../recursos/gym1.jpg')
+imgDivUno.classList.add('imgUno') 
+
+let divUnoTex = crearElemento('div')
+divUno.classList.add('primerContenedor')
+
+let h2Build = crearElementoConTexto('h2','BUILD YOUR BODY')
+h2Build.classList.add('h2Build')
+
+let pUno = crearElementoConTexto('p','Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni consectetur iure, quidem libero sequi ipsa expedita perspiciatis tempore deserunt impedit necessitatibus labore culpa quae voluptatibus recusandae fugiat corrupti ipsa')
+pUno.classList.add('puno')
+
+let pUnoUno = crearElementoConTexto('p','Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni consectetur iure.')
+pUnoUno.classList.add('puno')
+
+let hr = crearElemento('hr')
+hr.classList.add('hr')
+
+let hr2 = crearElemento('hr')
+hr.classList.add('hr')
+
+
+let hr3 = crearElemento('hr')
+hr.classList.add('hr')
+
+
+
+
+adicionarElementoAContenedor(imgDivUno,divUno)
+adicionarElementoAContenedor(divUnoTex,divUno)
+adicionarElementoAContenedor(h2Build,divUnoTex)
+adicionarElementoAContenedor(pUno,divUnoTex)
+adicionarElementoAContenedor(pUnoUno,divUnoTex)
+
+adicionarElementoABody(divUno)
+adicionarElementoABody(hr)
+
+
+
+
+let divDos = crearElemento('div')
+divDos.classList.add('segundoContenedor')
+
+let imgDivDos = crearImagen('../recursos/gym2.jpg')
+imgDivDos.classList.add('imgDivDos') 
+
+let divUnoTexDos = crearElemento('div')
+divUnoTexDos.classList.add('segundoContenedorDiv')
+
+let h2Traing = crearElementoConTexto('h2','Training Everyday')
+h2Traing.classList.add('h2Traing')
+
+let pDos = crearElementoConTexto('p','Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni consectetur iure, quidem libero sequi ipsa expedita perspiciatis tempore deserunt impedit necessitatibus labore culpa quae voluptatibus recusandae fugiat corrupti ipsa')
+pDos.classList.add('pDos')
+
+let pDosDos = crearElementoConTexto('p','Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni consectetur iure.')
+pDosDos.classList.add('pDosDos')
+
+adicionarElementoAContenedor(imgDivDos,divDos)
+adicionarElementoAContenedor(divUnoTexDos,divDos)
+adicionarElementoAContenedor(h2Traing,divUnoTexDos)
+adicionarElementoAContenedor(pDos,divUnoTexDos)
+adicionarElementoAContenedor(pDosDos,divUnoTexDos)
+
+adicionarElementoABody(divDos)
+adicionarElementoABody(hr2)
+
+let divTres = crearElemento('div')
+divTres.classList.add('tercerContenedor')
+
+let imgDivTres = crearImagen('../recursos/gym3.avif')
+imgDivTres.classList.add('imgTres') 
+
+let divUnoTexTres = crearElemento('div')
+divUnoTexTres.classList.add('tercerContenedorDiv')
+
+let h2More = crearElementoConTexto('h2','MORE STRONGER')
+h2More.classList.add('h2More')
+
+let pTres = crearElementoConTexto('p','Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni consectetur iure, quidem libero sequi ipsa expedita perspiciatis tempore deserunt impedit necessitatibus labore culpa quae voluptatibus recusandae fugiat corrupti ipsa')
+pTres.classList.add('pTres')
+
+let pTresTres = crearElementoConTexto('p','Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem magni consectetur iure.')
+pTresTres.classList.add('pTresTres')
+
+
+
+adicionarElementoAContenedor(imgDivTres,divTres)
+adicionarElementoAContenedor(divUnoTexTres,divTres)
+adicionarElementoAContenedor(h2More,divUnoTexTres)
+adicionarElementoAContenedor(pTres,divUnoTexTres)
+adicionarElementoAContenedor(pTresTres,divUnoTexTres)
+
+adicionarElementoABody(divTres)
+adicionarElementoABody(hr3)
+
+
+let DivUltimoP = crearElemento('div')
+DivUltimoP.classList.add('ultimoContenedor')
+
+let p1 = crearElementoConTexto('p','Carlos Mario')
+p1.classList.add('p1')
+
+let p2 = crearElementoConTexto('p','Ulloque')
+p2.classList.add('p2')
+
+let p3 = crearElementoConTexto('p','Alvarez')
+p3.classList.add('p3')
+
+adicionarElementoAContenedor(p1,DivUltimoP)
+adicionarElementoAContenedor(p2,DivUltimoP)
+adicionarElementoAContenedor(p3,DivUltimoP)
+
+adicionarElementoABody(DivUltimoP)
+
+    </script>
+
+
+    
+</body>
+</html>

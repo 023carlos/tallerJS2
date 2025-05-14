@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta name="description" content="Página principal de Mi Sitio de Fitness">
+  <meta name="keywords" content="fitness, gimnasio, salud, entrenamiento">
+  <meta name="author" content="CARLOS MARIO ULLOQUE ALVAREZ">
+    <title>ejercicio #2</title>
+    <script src="../js/utulidades.js"></script>
+    <link rel="stylesheet" href="../css/estilos2.css">
+</head>
+
+<body>
+
+
+    <script>
+
+
+        let header = crearElemento('div')
+        header.classList.add('encavezado')
+
+        let logo = crearElemento('h2');
+        logo.innerHTML = '<span class="color1">YOUR  </span> <span class="color2">  LOGO</span>';
+        logo.classList.add('h2Encavezado');
+
+        let h1 = crearElementoConTexto('h1', 'THE BLOG')
+        h1.classList.add('h1TheBlog')
+
+
+        adicionarElementoAContenedor(logo, header)
+        adicionarElementoAContenedor(h1, header)
+
+        adicionarElementoABody(header)
+
+
+
+        let divImg = crearElemento('div')
+        divImg.classList.add('divImagen')
+
+        let imagen = crearImagen('../recursos/ejercicio2Img1.avif')
+        imagen.classList.add('img-uno')
+
+
+        let divTexto = crearElemento('div')
+        divTexto.classList.add('overlayTexto')
+
+        let tituloImagen = crearElementoConTexto('h2', 'New Season')
+        tituloImagen.classList.add('tituloImg')
+
+        let tituloDosImagen = crearElementoConTexto('h2', 'Fashion Trends')
+        tituloDosImagen.classList.add('tituloDosImg')
+
+        let parrafo = crearElementoConTexto('p', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, dolorem sunt culpa officia dolore, numquam neque, voluptatibus quas natus nihil reprehenderit necessitatibus eos unde doloribus? Magni culpa molestiae quaerat labore.')
+        parrafo.classList.add('parrafoImg')
+
+        let boton = crearElementoConTexto('button', 'SHOP NOW')
+        boton.classList.add('btn')
+
+        adicionarElementoAContenedor(tituloImagen, divTexto)
+        adicionarElementoAContenedor(tituloDosImagen, divTexto)
+        adicionarElementoAContenedor(parrafo, divTexto)
+        adicionarElementoAContenedor(boton, divTexto)
+
+        adicionarElementoAContenedor(imagen, divImg)
+        adicionarElementoAContenedor(divTexto, divImg)
+
+        adicionarElementoABody(divImg)
+
+
+
+
+        let tituloCentral = crearElementoConTexto('h2', 'Fashion Hits')
+        tituloCentral.classList.add('h2Fashio')
+
+        adicionarElementoABody(tituloCentral)
+
+
+        let contenedorDiv = crearElemento('div')
+        contenedorDiv.classList.add('flexContenedorDiv')
+
+
+
+
+        let divUno = crearElemento('div')
+        divUno.classList.add('divUno')
+
+        let imagenDivUno = crearImagen('../recursos/divUno.webp')
+        imagenDivUno.classList.add('imgDivUno')
+
+        let h3Uno = crearElementoConTexto('h3', 'Title')
+        h3Uno.classList.add('tituloH3')
+
+        let pDiv = crearElementoConTexto('p', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, dolorem sunt culpa officia dolore, numquam neque, voluptatibus quas natus nihil reprehenderit necessitatibus eos unde doloribus? Magni culpa molestiae quaerat labore.')
+        pDiv.classList.add('parrafoDiv')
+
+        let botonDiv = crearElementoConTexto('button', 'Areed More')
+        botonDiv.classList.add('btnUno')
+
+
+
+
+
+        let divDos = crearElemento('div')
+        divDos.classList.add('divDos')
+
+        let imagenDivDos = crearImagen('../recursos/divDos.jpg')
+        imagenDivDos.classList.add('imgDivDos')
+
+        let h3Dos = crearElementoConTexto('h3', 'Title')
+        h3Dos.classList.add('tituloDosH3')
+
+        let pDivDos = crearElementoConTexto('p', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, dolorem sunt culpa officia dolore, numquam neque, voluptatibus quas natus nihil reprehenderit necessitatibus eos unde doloribus? Magni culpa molestiae quaerat labore.')
+        pDivDos.classList.add('parrafoDivDos')
+
+        let botonDivDos = crearElementoConTexto('button', 'Areed More')
+        botonDivDos.classList.add('btnDos')
+
+
+
+
+
+
+        let divTres = crearElemento('div')
+        divTres.classList.add('divTres')
+
+
+
+        let imagenDivTres = crearImagen('../recursos/divTres.jpg')
+        imagenDivTres.classList.add('imagenDivTres')
+
+        let h3Tres = crearElementoConTexto('h3', 'Title')
+        h3Tres.classList.add('tituloTresH3')
+
+        let pDivTres = crearElementoConTexto('p', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, dolorem sunt culpa officia dolore, numquam neque, voluptatibus quas natus nihil reprehenderit necessitatibus eos unde doloribus? Magni culpa molestiae quaerat labore.')
+        pDivTres.classList.add('parrafoDivTres')
+
+        let botonDivTres = crearElementoConTexto('button', 'Areed More')
+        botonDivTres.classList.add('btnTres')
+
+
+
+        adicionarElementoAContenedor(divUno, contenedorDiv)
+        adicionarElementoAContenedor(divDos, contenedorDiv)
+        adicionarElementoAContenedor(divTres, contenedorDiv)
+
+        adicionarElementoAContenedor(imagenDivUno, divUno)
+        adicionarElementoAContenedor(h3Uno, divUno)
+        adicionarElementoAContenedor(pDiv, divUno)
+        adicionarElementoAContenedor(botonDiv, divUno)
+
+        adicionarElementoAContenedor(imagenDivDos, divDos)
+        adicionarElementoAContenedor(h3Dos, divDos)
+        adicionarElementoAContenedor(pDivDos, divDos)
+        adicionarElementoAContenedor(botonDivDos, divDos)
+
+        adicionarElementoAContenedor(imagenDivTres, divTres)
+        adicionarElementoAContenedor(h3Tres, divTres)
+        adicionarElementoAContenedor(pDivTres, divTres)
+        adicionarElementoAContenedor(botonDivTres, divTres)
+
+        adicionarElementoABody(contenedorDiv)
+
+
+
+        let divUltimaImagen = crearElemento('div')
+        divUltimaImagen.classList.add('contenedorImg')
+
+        let divDelaImg = crearElemento('div')
+        divDelaImg.classList.add('imgDiv')
+
+        let ultimaimagen = crearImagen('../recursos/img!.avif')
+        ultimaimagen.classList.add('ultimaImg')
+
+
+
+        let divTextoUltimaImagen = crearElemento('div')
+        divTextoUltimaImagen.classList.add('divTextoImg')
+
+        let h2UltimaImagen = crearElementoConTexto('h2', 'The Best')
+        h2UltimaImagen.classList.add('h2Thebest')
+
+        let h2UltimaImagenDos = crearElementoConTexto('h2', 'Collection')
+        h2UltimaImagenDos.classList.add('h2Collection')
+
+        let pUltimaImagen = crearElementoConTexto('p', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, dolorem sunt culpa officia dolore, numquam neque, voluptatibus quas natus nihil reprehenderit necessitatibus eos unde doloribus? Magni culpa molestiae quaerat labore.')
+        pUltimaImagen.classList.add('pUltimaImg')
+
+        let botonUltimaImagen = crearElementoConTexto('button', 'Shop Now')
+        botonUltimaImagen.classList.add('btnUltimaImg')
+
+
+        adicionarElementoAContenedor(divDelaImg, divUltimaImagen)
+        adicionarElementoAContenedor(divTextoUltimaImagen, divUltimaImagen)
+
+
+        adicionarElementoAContenedor(ultimaimagen, divDelaImg)
+
+        adicionarElementoAContenedor(h2UltimaImagen, divTextoUltimaImagen)
+        adicionarElementoAContenedor(h2UltimaImagenDos, divTextoUltimaImagen)
+        adicionarElementoAContenedor(pUltimaImagen, divTextoUltimaImagen)
+        adicionarElementoAContenedor(botonUltimaImagen, divTextoUltimaImagen)
+
+        adicionarElementoABody(divUltimaImagen)
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

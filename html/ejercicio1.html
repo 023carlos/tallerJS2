@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+     <meta name="description" content="Página principal de Mi Sitio de Fitness">
+  <meta name="keywords" content="fitness, gimnasio, salud, entrenamiento">
+  <meta name="author" content="CARLOS MARIO ULLOQUE ALVAREZ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio#1</title>
+    <script src="../js/utulidades.js"></script>
+    <link rel="stylesheet" href="../css/estilos1.css">
+</head>
+
+<body>
+
+
+    <script>
+
+        let header = crearElemento('div')
+        header.classList.add('encavezado')
+
+
+        let logo = crearElementoConTexto('button', 'YOUR LOGO')
+        logo.classList.add('logo-btn')
+
+        adicionarElementoAContenedor(logo, header)
+        adicionarElementoABody(header)
+
+
+        let divImagen = crearElemento('div')
+        divImagen.classList.add('divPrimeraImagen')
+
+
+        let imagen = crearImagen('../recursos/STYLE.jpg')
+        imagen.classList.add('primaraImagen')
+
+        let h1 = crearElementoConTexto('h1', 'STYLE')
+        h1.classList.add('tituloStyle')
+
+
+        adicionarElementoAContenedor(imagen, divImagen)
+        adicionarElementoAContenedor(h1, divImagen)
+        adicionarElementoABody(divImagen)
+
+
+        let tercerDiv = crearElemento('div')
+        tercerDiv.classList.add('tercer-Div')
+
+        let h2 = crearElementoConTexto('h2', 'UP TO 50%OFF')
+        h2.classList.add('h2Precio')
+
+        let p = crearElementoConTexto('p', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit, et ratione voluptatibus laboriosam voluptas maxime distinctio ipsum aperiam accusantium ex,')
+        p.classList.add('textoPrimerP')
+
+        let boton = crearElementoConTexto('button', 'SHOP NOW')
+        boton.classList.add('btn-shop')
+
+        adicionarElementoAContenedor(h2, tercerDiv)
+        adicionarElementoAContenedor(p, tercerDiv)
+        adicionarElementoAContenedor(boton, tercerDiv)
+        adicionarElementoABody(tercerDiv)
+
+
+
+        let contenedor = crearElemento('div')
+        contenedor.classList.add('flexContenedor')
+
+        let divImagenDos = crearElemento('div')
+        divImagenDos.classList.add('divImg-Dos')
+
+        let ImagenDos = crearImagen('../recursos/segundaImagen.jpg')
+        ImagenDos.classList.add('segundaImagen')
+
+        let divConImagen = crearElemento('div')
+        divConImagen.classList.add('divTexto')
+
+        let h2Dos = crearElementoConTexto('h2', 'NEW STYLE')
+        h2Dos.classList.add('h2NewStyle')
+
+        let pDos = crearElementoConTexto('p', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit, et ratione voluptatibus laboriosam voluptas maxime distinctio ipsum aperiam accusantium ex,')
+        pDos.classList.add('textoSegundoP')
+
+        let botonDos = crearElementoConTexto('button', 'BUY NOW')
+        botonDos.classList.add('btn-BuyNow')
+
+        adicionarElementoAContenedor(divImagenDos, contenedor)
+        adicionarElementoAContenedor(divConImagen, contenedor)
+
+        adicionarElementoAContenedor(ImagenDos, divImagenDos)
+
+        adicionarElementoAContenedor(h2Dos, divConImagen)
+        adicionarElementoAContenedor(pDos, divConImagen)
+        adicionarElementoAContenedor(botonDos, divConImagen)
+
+        adicionarElementoABody(contenedor)
+
+
+        let h2Tres = crearElementoConTexto('h2', 'FOLLOW ALONG WITH US')
+        h2Tres.classList.add('tercerTitulo')
+
+        let contenedorIconos = crearElemento('div')
+        contenedorIconos.classList.add('contenedorConIconos')
+
+        let iconoUno = crearImagen('../recursos/facebook-new.png')
+        iconoUno.classList.add('facebook')
+
+        let iconoDos = crearImagen('../recursos/instagram-new.png')
+        iconoDos.classList.add('instagram')
+
+        let iconoTres = crearImagen('../recursos/icone-twitter-jaune.png')
+        iconoTres.classList.add('twitter')
+
+        let parrafo = crearElementoConTexto('p', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium odit, et ratione voluptatibus laboriosam voluptas maxime distinctio ipsum aperiam accusantium ex,orem')
+        parrafo.classList.add('parrafoFinal')
+
+
+        adicionarElementoABody(h2Tres)
+
+        adicionarElementoAContenedor(iconoUno, contenedorIconos)
+        adicionarElementoAContenedor(iconoDos, contenedorIconos)
+        adicionarElementoAContenedor(iconoTres, contenedorIconos)
+
+        adicionarElementoABody(contenedorIconos)
+        adicionarElementoABody(parrafo)
+
+
+
+    </script>
+
+</body>
+
+</html>
